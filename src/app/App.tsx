@@ -1,3 +1,9 @@
+import { SmoothScroll } from '@/app/SmoothScroll'
+
 export function App() {
-  return <main>Massive</main>
+  return (
+    <SmoothScroll>
+      <main id="main">Massive</main>
+    </SmoothScroll>
+  )
 }

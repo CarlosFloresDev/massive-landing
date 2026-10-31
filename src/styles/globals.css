@@ -60,6 +60,8 @@
   html {
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    /* Native anchor jumps (reduced motion) land below the fixed navbar. */
+    scroll-padding-top: 72px;
   }
 
   body {
