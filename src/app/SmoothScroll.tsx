@@ -4,9 +4,6 @@ import { gsap, ScrollTrigger } from '@/lib/gsap'
 import { usePrefersReducedMotion } from '@/hooks/usePrefersReducedMotion'
 import { registerLenis } from '@/lib/scroll'
 
-/** Height of the fixed navbar, used to offset anchor jumps. */
-const NAV_OFFSET = -72
-
 /**
  * Smooth scrolling driven by GSAP's ticker so Lenis and ScrollTrigger
  * share a single animation frame. Disabled under reduced motion, where
@@ -21,7 +18,8 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     const lenis = new Lenis({
       autoRaf: false,
       lerp: 0.1,
-      anchors: { offset: NAV_OFFSET },
+      // Anchor offset comes from `scroll-padding-top` in globals.css, which Lenis respects.
+      anchors: true,
     })
 
     registerLenis(lenis)
