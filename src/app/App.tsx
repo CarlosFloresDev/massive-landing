@@ -1,5 +1,6 @@
 import { SmoothScroll } from '@/app/SmoothScroll'
 import { Navbar } from '@/components/layout/Navbar'
+import { Faq } from '@/sections/Faq'
 import { Hero } from '@/sections/Hero'
 import { Manifesto } from '@/sections/Manifesto'
 import { Process } from '@/sections/Process'
@@ -18,6 +19,7 @@ export function App() {
         <Process />
         <Manifesto />
         <Work />
+        <Faq />
         <div className="h-[100dvh]" />
       </main>
     </SmoothScroll>
