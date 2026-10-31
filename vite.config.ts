@@ -12,5 +12,7 @@ export default defineConfig({
   },
   build: {
     target: 'es2022',
+    // The Three.js scene is a lazy chunk (~290 KB gzip) fetched after first paint.
+    chunkSizeWarningLimit: 1200,
   },
 })
