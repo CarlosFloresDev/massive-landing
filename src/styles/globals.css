@@ -109,6 +109,15 @@
     color: transparent;
   }
 
+  /* Faded footer wordmark. Applied to each split character as well, because a
+     transformed child escapes its parent's background-clip. */
+  .text-wordmark {
+    background-image: linear-gradient(180deg, rgb(243 242 239 / 0.14), rgb(243 242 239 / 0.01));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
   /* Static film grain on a fixed, non-interactive layer (never on scrolling content). */
   .grain {
     position: fixed;
