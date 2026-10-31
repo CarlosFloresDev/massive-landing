@@ -5,6 +5,7 @@ import { Manifesto } from '@/sections/Manifesto'
 import { Process } from '@/sections/Process'
 import { Services } from '@/sections/Services'
 import { StackMarquee } from '@/sections/StackMarquee'
+import { Work } from '@/sections/Work'
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
         <Services />
         <Process />
         <Manifesto />
+        <Work />
         <div className="h-[100dvh]" />
       </main>
     </SmoothScroll>
